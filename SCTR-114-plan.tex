@@ -1,38 +1,93 @@
-\documentclass[DM,lsstdraft,toc]{lsstdoc}
+% generated from JIRA project LVV
+% using template at /opt/hostedtoolcache/Python/3.11.11/x64/lib/python3.11/site-packages/docsteady/templates/tpnoresult.latex.jinja2.
+% using docsteady version 3.0.2
+% Please do not edit -- update information in Jira instead
+\documentclass[PSE,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
 \usepackage{longtable,booktabs}
 \usepackage{enumitem}
 \usepackage{arydshln}
+\usepackage{attachfile}
+\usepackage{array}
+\usepackage{dashrule}
 
-\input{meta.tex}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
+\input meta.tex
+
+\newcommand{\attachmentsUrl}{https://github.com/\gitorg/\lsstDocType-\lsstDocNum/blob/\gitref/attachments}
 \providecommand{\tightlist}{
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+\setcounter{tocdepth}{4}
+
 \begin{document}
 
-\def\milestoneName{System-level Science Verification: Instrument Signature Removal and Detector Characterization}
-\def\milestoneId{LVV-P136}
-\def\product{Data Management}
+\def\milestoneName{Instrument Signature Removal and Detector Characterization}
+\def\milestoneId{System-level Science Verification Acceptance Test Campaign}
+\def\product{Science Verification}
 
 \setDocCompact{true}
 
-\title{LVV-P136 System-level Science Verification: Instrument Signature Removal and Detector Characterization Test Plan }
+\title{System-level Science Verification Acceptance Test Campaign: Instrument
+Signature Removal and Detector Characterization Test Plan }
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{\vcsDate}
-\author{Christopher Waters}
+\date{ 2025-01-31 }
+\author{ Christopher Waters }
 
 \input{history_and_info.tex}
 
+
 \setDocAbstract{
-This is a stub test report created from a template.
-The content is being prepared.
+This is the test plan for
+\textbf{ Instrument Signature Removal and Detector Characterization} (System-level Science Verification Acceptance Test Campaign),
+an LSST milestone pertaining to the Project System Engineering and Commissioning.\\
+This document is based on content automatically extracted from the Jira test database on \docDate.
+The most recent change to the document repository was on \vcsDate.
 }
+
 
 \maketitle
 
 \section{Introduction}
-Use the GitHub Actions workflow ``docgen from Jira'' to generate this document's content from Jira.
+\label{sect:intro}
+
+
+\subsection{Objectives}
+\label{sect:objectives}
+
+ This acceptance test campaign will verify system-level science
+performance metrics in the OSS and LSR associated with instrument
+signature removal and detector characterization.
+
+
+
+\subsection{System Overview}
+\label{sect:systemoverview}
+
+ None
+
+
+\subsection{Document Overview}
+\label{sect:docoverview}
+
+This document was generated from Jira, obtaining the relevant information from the
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P136}{LVV-P136}
+~Jira Test Plan and related Test Cycles (
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R299}{LVV-R299}
+).
+
+Section \ref{sect:intro} provides an overview of the test campaign, the system under test (\product{}),
+the applicable documentation, and explains how this document is organized.
+Section \ref{sect:testplan} provides additional information about the test plan, like for example the configuration
+used for this test or related documentation.
+Section \ref{sect:personnel} describes the necessary roles and lists the individuals assigned to them.
+
+Section \ref{sect:overview} provides a summary of the test results, including an overview in Table \ref{table:summary},
+an overall assessment statement and suggestions for possible improvements.
+Section \ref{sect:detailedtestresults} provides detailed results for each step in each test case.
+
+The current status of test plan \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P136}{LVV-P136} in Jira is \textbf{ Draft }.
 
 \subsection{References}
 \label{sect:references}
@@ -40,5 +95,540 @@ Use the GitHub Actions workflow ``docgen from Jira'' to generate this document's
 \bibliography{lsst,refs,books,refs_ads,local}
 
 
-\input{appendix}
+\newpage
+\section{Test Plan Details}
+\label{sect:testplan}
+
+
+\subsection{Data Collection}
+
+  Observing is not required for this test campaign.
+
+\subsection{Verification Environment}
+\label{sect:hwconf}
+  None
+
+  \subsection{Entry Criteria}
+  None
+
+  \subsection{Exit Criteria}
+  None
+
+
+\subsection{Related Documentation}
+
+Docushare collection where additional relevant documentation can be found:
+
+\begin{itemize}
+\item None
+\end{itemize}
+
+
+
+\subsection{PMCS Activity}
+
+Primavera milestones related to the test campaign:
+None
+
+
+\newpage
+\section{Personnel}
+\label{sect:personnel}
+
+The personnel involved in the test campaign is shown in the following table.
+
+{\small
+\begin{longtable}{p{3cm}p{3cm}p{3cm}p{6cm}}
+\hline
+\multicolumn{2}{r}{T. Plan \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P136}{LVV-P136} owner:} &
+\multicolumn{2}{l}{\textbf{ Christopher Waters } }\\\hline
+\multicolumn{2}{r}{T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R299}{LVV-R299} owner:} &
+\multicolumn{2}{l}{\textbf{
+Christopher Waters }
+} \\\hline
+\textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3897}{LVV-E3897}
+& {\small Christopher Waters } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3898}{LVV-E3898}
+& {\small Christopher Waters } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small TBD. }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3899}{LVV-E3899}
+& {\small Christopher Waters } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3900}{LVV-E3900}
+& {\small Christopher Waters } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3901}{LVV-E3901}
+& {\small Christopher Waters } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3906}{LVV-E3906}
+& {\small Yousuke Utsumi } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3907}{LVV-E3907}
+& {\small Yousuke Utsumi } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3908}{LVV-E3908}
+& {\small Yousuke Utsumi } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3909}{LVV-E3909}
+& {\small Yousuke Utsumi } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3910}{LVV-E3910}
+& {\small Yousuke Utsumi } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3911}{LVV-E3911}
+& {\small Yousuke Utsumi } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3912}{LVV-E3912}
+& {\small Yousuke Utsumi } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3913}{LVV-E3913}
+& {\small Yousuke Utsumi } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3914}{LVV-E3914}
+& {\small Yousuke Utsumi } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3925}{LVV-E3925}
+& {\small Yousuke Utsumi } & {\small Undefined } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
+\end{longtable}
+}
+
+\newpage
+
+\section{Test Campaign Overview}
+\label{sect:overview}
+
+\subsection{Summary}
+\label{sect:summarytable}
+
+{\small
+\begin{longtable}{p{2cm}cp{2.3cm}p{8.6cm}p{2.3cm}}
+\toprule
+\multicolumn{2}{r}{ T. Plan \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P136}{LVV-P136}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ System-level Science Verification Acceptance Test Campaign: Instrument
+Signature Removal and Detector Characterization }} & Draft \\\hline
+\multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R299}{LVV-R299}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ System-level Science Verification Acceptance Test Campaign: Instrument
+Signature Removal and Detector Characterization (ComCam) }} & Not Executed \\\hline
+\textbf{Test Cases} &  \textbf{Ver.}  \\\toprule
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3897}{LVV-E3897}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3898}{LVV-E3898}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3899}{LVV-E3899}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3900}{LVV-E3900}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3901}{LVV-E3901}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3906}{LVV-E3906}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3907}{LVV-E3907}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3908}{LVV-E3908}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3909}{LVV-E3909}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3910}{LVV-E3910}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3911}{LVV-E3911}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3912}{LVV-E3912}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3913}{LVV-E3913}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3914}{LVV-E3914}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3925}{LVV-E3925}
+&  1.0(d)
+\\
+\\\hline
+\caption{Test Campaign Summary}
+\label{table:summary}
+\end{longtable}
+}
+
+\subsection{Overall Assessment}
+\label{sect:overallassessment}
+
+None
+
+\subsection{Recommended Improvements}
+\label{sect:recommendations}
+
+\newpage
+\section{Detailed Tests}
+\label{sect:detailedtests}
+
+\subsection{Test Cycle LVV-R299 }
+
+Open test cycle {\it \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/testPlayer/LVV-R299}{System-level Science Verification Acceptance Test Campaign: Instrument
+Signature Removal and Detector Characterization (ComCam)}} in Jira.
+
+Test Cycle name: System-level Science Verification Acceptance Test Campaign: Instrument
+Signature Removal and Detector Characterization (ComCam)\\
+Status: Not Executed
+
+Test campaign to support "System-level Science Verification Acceptance
+Test Campaign: Instrument Signature Removal and Detector
+Characterization" using ComCam.
+
+\subsubsection{Software Version/Baseline}
+Not provided.
+
+\subsubsection{Configuration}
+Not provided.
+
+\subsubsection{Test Cases in LVV-R299 Test Cycle}
+
+\paragraph{ LVV-E3897 - Bias Image Pixel Noise Test }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3897}{\textit{ LVV-E3897 } }
+test case in Jira.
+
+Measure read noise with bias images, using imaging pixels.
+
+\textbf{ Preconditions}:\\
+Bias images collected. ~SuperBias image created. Gains for conversion
+from counts to electrons.
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3898 - Science Data Pixel Noise Test \#1 }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3898}{\textit{ LVV-E3898 } }
+test case in Jira.
+
+To measure the per pixel noise on a selected science image.~ This test
+will calculate the noise by analyzing a science image and calculating
+the sigma in the image overscan region.
+
+\textbf{ Preconditions}:\\
+An appropriate science image with a 15 second exposure must exist. Need
+Gains to convert from counts to electrons.
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3899 - Sky imaging test of cross-talk accuracy and stability }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3899}{\textit{ LVV-E3899 } }
+test case in Jira.
+
+Quantify cross-talk accuracy and stability on sky images
+
+\textbf{ Preconditions}:\\
+Nominal cross-talk correction matrix.~
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3900 - Test cross-talk stability and accuracy for AP, DRP }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3900}{\textit{ LVV-E3900 } }
+test case in Jira.
+
+verify stability and accuracy of cross-talk elements for AP and DRP
+production (if different)~
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3901 - Crosstalk functionality exists }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3901}{\textit{ LVV-E3901 } }
+test case in Jira.
+
+Verify that the crosstalk functionality exists in the alert production
+pipeline
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3906 - Usable Pixel Fraction }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3906}{\textit{ LVV-E3906 } }
+test case in Jira.
+
+The maximum fraction of pixels scientifically unusable per sensor (out
+of the total allowable fraction of sensors meeting this performance)
+will not exceed PixFrac(1 percent). ~The maximum allowable fraction of
+sensors with fraction PixFrac unusable pixels will not exceed
+SensorFraction (15 percent)
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3907 - Single exposure dynamic range }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3907}{\textit{ LVV-E3907 } }
+test case in Jira.
+
+Verify that objects within the specified dynamic range of a single image
+are not saturated
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3908 - Attenuation of gain variation of an hour }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3908}{\textit{ LVV-E3908 } }
+test case in Jira.
+
+Verify the attenuation of errors due to gain variation over one hour
+time scales
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3909 - Attenuation of large scale gain variation errors }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3909}{\textit{ LVV-E3909 } }
+test case in Jira.
+
+Verify the attenuation of errors due to gain variation
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3910 - Attenuation of small scale gain variation over short time scales }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3910}{\textit{ LVV-E3910 } }
+test case in Jira.
+
+Verify the attenuation of errors due to gain variation over short time
+scales
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3911 - Effect of gain on photometric repeatability -\/- 12 hours }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3911}{\textit{ LVV-E3911 } }
+test case in Jira.
+
+Verify effect of uncorrected gain variations on photometric
+repeatability on 12 hour time scales
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3912 - Effect of gain variations on photometric repeatability -\/- 1 hr }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3912}{\textit{ LVV-E3912 } }
+test case in Jira.
+
+Verify the effect of gain variations on photometric repeatability over 1
+hour time scales
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3913 - Gain variation -\/- 1 hr }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3913}{\textit{ LVV-E3913 } }
+test case in Jira.
+
+Verify amount of gain variation in one hour
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3914 - Crosstalk coefficient measurement capability }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3914}{\textit{ LVV-E3914 } }
+test case in Jira.
+
+Verify that the LSST system is able to measure crosstalk coefficients
+during downtime
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3925 - Amplifier Scale Sensor Gain Allocations }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3925}{\textit{ LVV-E3925 } }
+test case in Jira.
+
+Verify the FPA sensor gain variation errors~
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\None
+
+
+Detailed steps :
+
+
+
+\input{appendix.tex}
 \end{document}
